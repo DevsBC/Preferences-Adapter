@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/settings"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Preferencias"
+            android:textSize="28dp"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            />
+
+        <ToggleButton
+            android:id="@+id/toggleButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ToggleButton"
+            android:onClick="onClick"/>
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Activar ultra instinto"
+            android:layoutDirection="rtl"
+            android:paddingTop="20dp"
+            android:onClick="onClick"
+            />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sincronizar en la nube"
+            android:paddingTop="20dp"
+            android:onClick="onClick"
+            />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:paddingTop="20dp"
+            android:id="@+id/radioGroup"
+            >
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Modo Sencillo"
+                android:onClick="onClick"
+                />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Modo Avanzado"
+                android:onClick="onClick"
+                />
+
+        </RadioGroup>
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar"
+            android:onClick="onClick"/>
+    </LinearLayout>
+
+
+
+    <ListView
+        android:id="@+id/eventsList"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/settings"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="10dp" />
+
+
+</RelativeLayout>
